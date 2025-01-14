@@ -15,7 +15,7 @@ export const App: React.FC = () => {
 
   const numberOfPages = useMemo(
     () => getNumberOfPages(itemsPerPage, itemsCount),
-    [itemsPerPage],
+    [itemsPerPage, itemsCount],
   );
 
   const firstItem = (activePage - 1) * itemsPerPage + 1;
